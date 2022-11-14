@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  --theme-color: #fe6347;
+  --font-family: "Poppins", sans-serif;
+  --background-color: #fffbfb;
+}
+
+/*
+===============
+GLOBAL CSS
+===============
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: var(--font-family);
+  background-color: var(--background-color);
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+
+/*
+==================
+Button component
+==================
+*/
+
+.button {
+  padding: 15px 43px;
+  border: none;
+  border-radius: 36px;
+  font-size: 16px;
+  font-weight: 600;
+}
+.button-color {
+  background-color: var(--theme-color);
+  color: #fff;
+  transition: 0.5s;
+}
+.button-color:hover {
+  transition: 0.5s;
+  scale: 0.9;
+}
+/*
+==================
+Header Section Css
+===================
+*/
+.header-section {
+  background-image: url(../images/header-bg.png);
+  background-repeat: no-repeat;
+  background-position: left top;
+  background-attachment: fixed;
+  max-height: 95%;
+  height: 100vh;
+}
+
+.myNav-navbar {
+  margin-right: 100px !important;
+}
+.nav-item {
+  margin-right: 25px;
+}
+.nav-link {
+  font-size: 16px;
+  font-weight: 600;
+  color: #a6b0c1;
+}
+.navbar-nav .nav-link.active {
+  color: #233d62 !important;
+}
+.mytopNavbar {
+  margin-top: 35px;
+}
