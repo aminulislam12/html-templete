@@ -41,6 +41,14 @@ Button component
   background-color: var(--theme-color);
   color: #fff;
   transition: 0.5s;
+  box-shadow: 1px 13px 32px -1px #fe6347a8;
+}
+
+.button-white {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  transition: 0.5s;
+  /* box-shadow: 1px 13px 32px -1px #fe6347a8; */
 }
 .button-color:hover {
   transition: 0.5s;
@@ -55,7 +63,6 @@ Header Section Css
   background-image: url(../images/header-bg.png);
   background-repeat: no-repeat;
   background-position: left top;
-  background-attachment: fixed;
   max-height: 95%;
   height: 100vh;
 }
@@ -94,4 +101,96 @@ Slider Section Css
   color: var(--text-color);
   opacity: 0.8;
   line-height: 50px;
+}
+/*
+==================
+Service Section Css
+===================
+*/
+.service-section {
+  margin: 100px 0 60px 0;
+}
+
+.service-top {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--text-color);
+}
+.service-title {
+  font-size: 45px;
+  font-weight: bold;
+  color: var(--text-color);
+}
+.service-subtitle {
+  font-size: 20px;
+  color: var(--text-color);
+  opacity: 0.6;
+}
+/*
+==================
+Service Card Css
+===================
+*/
+.service-card {
+  padding: 10px;
+}
+.mycard-img {
+  margin-top: 17px;
+  margin-bottom: 10px;
+}
+.card {
+  border: none !important;
+  background-color: var(--background-color) !important;
+}
+.card:hover {
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
+  transition: 0.5s;
+}
+.card-title {
+  font-size: 25px !important;
+  font-weight: bold;
+  color: var(--text-color);
+}
+.card-body p {
+  font-size: 17px;
+  color: var(--text-color);
+  opacity: 0.6;
+}
+/*
+==================
+About Section Css
+===================
+*/
+.about-section {
+  margin: 80px 0 80px 0;
+}
+.about-content > span {
+  font-size: 20px;
+  color: var(--theme-color);
+  font-weight: bold;
+}
+.about-title {
+  font-size: 45px;
+  color: var(--text-color);
+  font-weight: bold;
+}
+.about-text {
+  font-size: 20px;
+  opacity: 0.9;
+  color: var(--text-color);
+}
+.btn-space {
+  margin-left: 25px;
+}
+.abt-icon {
+  font-size: 41px;
+}
+.btns {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+.about-btn-group {
+  display: flex;
+  align-items: center;
 }
