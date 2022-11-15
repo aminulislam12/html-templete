@@ -4,6 +4,7 @@
   --theme-color: #fe6347;
   --font-family: "Poppins", sans-serif;
   --background-color: #fffbfb;
+  --text-color: #233d62;
 }
 
 /*
@@ -75,4 +76,22 @@ Header Section Css
 }
 .mytopNavbar {
   margin-top: 35px;
+}
+
+/*
+==================
+Slider Section Css
+===================
+*/
+.slider-title {
+  font-size: 65px;
+  font-weight: bold;
+  color: var(--text-color);
+}
+.slider-subtitle {
+  font-size: 16px;
+  font-weight: normal;
+  color: var(--text-color);
+  opacity: 0.8;
+  line-height: 50px;
 }
