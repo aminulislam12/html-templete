@@ -56,6 +56,26 @@ Button component
 }
 /*
 ==================
+Section Releted Css
+===================
+*/
+.section-top-title {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--text-color);
+}
+.section-title {
+  font-size: 45px;
+  font-weight: bold;
+  color: var(--text-color);
+}
+.section-subtitle {
+  font-size: 20px;
+  color: var(--text-color);
+  opacity: 0.6;
+}
+/*
+==================
 Header Section Css
 ===================
 */
@@ -111,21 +131,6 @@ Service Section Css
   margin: 0 0 60px 0;
 }
 
-.service-top {
-  font-size: 15px;
-  font-weight: 600;
-  color: var(--text-color);
-}
-.service-title {
-  font-size: 45px;
-  font-weight: bold;
-  color: var(--text-color);
-}
-.service-subtitle {
-  font-size: 20px;
-  color: var(--text-color);
-  opacity: 0.6;
-}
 /*
 ==================
 Service Card Css
@@ -193,4 +198,57 @@ About Section Css
 .about-btn-group {
   display: flex;
   align-items: center;
+}
+
+/*
+======================
+Portfolio Section Css
+======================
+*/
+.portfolio-nav {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  gap: 98px;
+}
+
+.portfolio-nav > li {
+  list-style: none;
+}
+
+.portfolio-nav > li > a {
+  display: block;
+  text-decoration: none;
+  color: var(--text-color);
+  font-size: 20px;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+.portfolio-nav > li > a.active {
+  color: var(--theme-color);
+}
+.portfolio-nav > li > a:hover {
+  color: var(--theme-color);
+  transition: 0.6s;
+}
+.potfolio {
+  display: flex;
+  gap: 25px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 30px 0 30px 0;
+}
+.portfolio-card {
+  max-width: 400px;
+  background-color: var(--theme-color);
+  height: 430px;
+  /* display: flex;
+  justify-content: center; */
+  border-radius: 25px;
+}
+.portfolio-card > img {
+  width: 100%;
+  /* align-self: center; */
+  height: 100%;
+  border-radius: 25px;
 }
