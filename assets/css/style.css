@@ -214,20 +214,16 @@ Portfolio Section Css
 
 .portfolio-nav > li {
   list-style: none;
-}
-
-.portfolio-nav > li > a {
   display: block;
   text-decoration: none;
   color: var(--text-color);
   font-size: 20px;
   font-weight: 500;
   text-transform: capitalize;
+  cursor: pointer;
 }
-.portfolio-nav > li > a.active {
-  color: var(--theme-color);
-}
-.portfolio-nav > li > a:hover {
+
+.portfolio-nav > li:hover {
   color: var(--theme-color);
   transition: 0.6s;
 }
@@ -242,13 +238,38 @@ Portfolio Section Css
   max-width: 400px;
   background-color: var(--theme-color);
   height: 430px;
-  /* display: flex;
-  justify-content: center; */
   border-radius: 25px;
+  position: relative;
 }
-.portfolio-card > img {
+.portfolio-card > a > img {
   width: 100%;
-  /* align-self: center; */
   height: 100%;
   border-radius: 25px;
+}
+.portfolio-nav > li.mixitup-control-active {
+  color: var(--theme-color);
+}
+.hover-thum {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: var(--theme-color);
+  transform: scale(0);
+  transition: 0.5s;
+  border-radius: 25px;
+  opacity: 0.7;
+}
+.hover-thum > span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--text-color);
+  display: inline-block;
+  font-size: 60px;
+}
+.portfolio-card:hover .hover-thum {
+  transform: scale(1);
 }
